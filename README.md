@@ -1,73 +1,74 @@
-# React + TypeScript + Vite
+# 🦾 GymForce - Premium Gym Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Gym Hero](https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop)
 
-Currently, two official plugins are available:
+GymForce is a state-of-the-art, full-stack Gym Management System built with a premium **Glassmorphism UI**. Designed for multi-location fitness brands, it offers real-time analytics, member CRM, and automated financial tracking.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Key Features
 
-## React Compiler
+- 🔐 **Secure Authentication**: JWT-based login system with role-based access control.
+- 📊 **Dynamic Dashboard**: Real-time revenue charts (Recharts) and priority membership alerts.
+- 👥 **Advanced Member CRM**: Comprehensive member database with search, filter, and **Bulk CSV Import**.
+- 💳 **Financial Engine**: Automated membership expiry calculation and transaction history tracking.
+- 🛡️ **Concurrency Safety**: Optimistic Locking (OCC) to prevent data race conditions between multiple staff.
+- 🏢 **Multi-Location Support**: Centralized management for various gym branches.
+- 👔 **Trainer Management**: Dedicated section for instructors and coaching staff.
+- 🎨 **Premium UI/UX**: Glassmorphism aesthetic, smooth animations, and responsive layouts.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+### Frontend
+- **React 19** (TypeScript + TSX)
+- **Vite** (Build Tool)
+- **Tailwind CSS v4** (Styling)
+- **Lucide React** (Icons)
+- **Recharts** (Data Visualization)
+- **Papaparse** (CSV Processing)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Backend
+- **Node.js & Express**
+- **MySQL** (Database)
+- **Bcrypt** (Password Hashing)
+- **JSON Web Tokens** (Auth)
+- **dotenv** (Environment Management)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Local Setup
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 1. Prerequisites
+- **Node.js** (v18+)
+- **XAMPP / MySQL Server**
+- **npm**
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 2. Database Configuration
+1. Open phpMyAdmin and create a database named `gym_management`.
+2. Import the provided SQL schema (found in the setup guide or by creating the tables manually).
+3. Insert a default admin:
+   ```sql
+   INSERT INTO users (username, password, role) VALUES ('admin', 'admin123', 'admin');
+   ```
+
+### 3. Backend Setup
+```bash
+cd server
+npm install
+# Create a .env file based on .env.example
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 4. Frontend Setup
+```bash
+# In the root directory
+npm install
+npm run dev
 ```
+
+## 📸 Screenshots
+
+| Dashboard | Member CRM | 
+|-----------|------------|
+| ![Dashboard](https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400) | ![CRM](https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400) |
+
+---
+
+## 📄 License
+MIT License - Created by **Antigravity AI** for [Ayush123141](https://github.com/Ayush123141)
