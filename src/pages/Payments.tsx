@@ -72,7 +72,7 @@ const Payments = () => {
       {/* Top Banner with Image */}
       <div className="h-44 rounded-4xl overflow-hidden mb-12 relative border border-white/5">
         <img 
-          src="gym_training_session_1777016313736.png" 
+          src="https://images.unsplash.com/photo-1550345332-09e3ac987658?q=80&w=1374&auto=format&fit=crop" 
           className="w-full h-full object-cover" 
           alt="Financials" 
         />

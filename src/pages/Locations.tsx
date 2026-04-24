@@ -50,7 +50,7 @@ const Locations = () => {
 
       {/* Hero Header */}
       <div className="h-64 rounded-4xl overflow-hidden mb-12 relative border border-white/5">
-        <img src="gym_location_card_1777016602957.png" className="w-full h-full object-cover" alt="Locations" />
+        <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1470&auto=format&fit=crop" className="w-full h-full object-cover" alt="Locations" />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/20 to-transparent flex items-center p-12">
            <div className="max-w-md">
              <h3 className="text-3xl font-black text-white mb-2">Global Footprint</h3>

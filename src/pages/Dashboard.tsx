@@ -38,7 +38,7 @@ const Dashboard = () => {
       {/* Hero Section */}
       <div className="relative h-64 rounded-4xl overflow-hidden mb-10 shadow-2xl border border-white/5">
         <img 
-          src="gym_dashboard_hero_1777016279187.png" 
+          src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop" 
           className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-1000" 
           alt="Gym Hero" 
         />

@@ -55,7 +55,7 @@ const Trainers = () => {
 
       {/* Hero Image */}
       <div className="h-64 rounded-4xl overflow-hidden mb-12 relative border border-white/5">
-        <img src="gym_trainer_card_new_1777016644669.png" className="w-full h-full object-cover" alt="Trainers" />
+        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover" alt="Trainers" />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 flex flex-col justify-end p-10">
            <h3 className="text-3xl font-black text-white">The Force Behind the Gym</h3>
            <p className="text-slate-400">Manage specialized coaching staff across all branches.</p>

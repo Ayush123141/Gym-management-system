@@ -121,7 +121,7 @@ const Members = () => {
       {/* Hero Image Section */}
       <div className="h-48 rounded-4xl overflow-hidden mb-10 relative border border-white/5">
         <img 
-          src="gym_member_profile_1777016296011.png" 
+          src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=1470&auto=format&fit=crop" 
           className="w-full h-full object-cover grayscale px-2" 
           alt="Member CRM" 
         />

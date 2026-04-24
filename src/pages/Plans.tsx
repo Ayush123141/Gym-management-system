@@ -57,7 +57,7 @@ const Plans = () => {
 
       {/* Hero Header */}
       <div className="h-64 rounded-4xl overflow-hidden mb-12 relative border border-white/5">
-        <img src="gym_plan_card_1777016619094.png" className="w-full h-full object-cover" alt="Plans" />
+        <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1469&auto=format&fit=crop" className="w-full h-full object-cover" alt="Plans" />
         <div className="absolute inset-0 bg-gradient-to-r from-blue-950 via-blue-950/40 to-transparent flex items-center p-12">
            <div className="max-w-md">
              <h3 className="text-3xl font-black text-white mb-2">Tiered Access</h3>
