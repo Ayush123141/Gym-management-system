@@ -20,8 +20,7 @@ const ProtectedRoute = ({ children }) => {
   return children;
 };
 
-// Placeholder Pages
-const Plans = () => <div className="text-2xl font-bold">Plans Page (Coming Soon)</div>;
+
 
 function App() {
   return (
